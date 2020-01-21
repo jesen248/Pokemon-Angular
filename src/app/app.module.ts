@@ -25,13 +25,15 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 
 import 'hammerjs';
+import { PhotoPokemonComponent } from './photo-pokemon/photo-pokemon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     CatalogComponent,
-    PokemonComponent
+    PokemonComponent,
+    PhotoPokemonComponent
   ],
   imports: [
     BrowserModule,

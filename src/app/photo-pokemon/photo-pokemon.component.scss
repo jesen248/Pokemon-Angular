@@ -1,0 +1,155 @@
+.row {
+    width: 100%;
+    height: 100%;
+  }
+
+.col-6 {
+      width: 50%;
+      margin: 0;
+      height: auto;
+      padding:5px 5px;
+      position: relative;
+      float: left;
+      box-sizing: border-box;
+    }
+
+  .camera-display {
+    background-color:#b0ade6;
+    border-radius: 5%;
+    border: 10px solid #E6E6E6;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  .stats-display {
+    background-color: #ce4e4e;
+    border-radius: 0%;
+    border: 5px solid #E6E6E6;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    padding: 10px;
+    overflow: scroll;
+    height: auto;
+    h2 {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+    ul {
+      margin: 10px;
+      overflow: auto;
+    }
+  }
+
+  #actions {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    position: relative;
+    float: left;
+    top: -75px;
+    left: 15px;
+    .a {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      background-color: #404040;
+      border: 5px solid #303030;
+      cursor: pointer;
+    }
+  }
+
+  #cross {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    .cross-button {
+      background-color: #404040;
+      border: #303030;
+      color: red;
+      cursor: pointer;
+      border-style: solid;
+    }
+    .up {
+      grid-row-start: 1;
+      grid-column-start: 2;
+      border-width: 5px 5px 0px 5px;
+    }
+    .right {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      border-width: 5px 0px 5px 5px;
+    }
+    .down {
+      grid-row-start: 3;
+      grid-column-start: 2;
+      border-width: 0px 5px 5px 5px;
+    }
+    .left {
+      grid-row-start: 2;
+      grid-column-start: 3;
+      border-width: 5px 5px 5px 0px;
+    }
+    .center {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      border-width: 0;
+    }
+
+  }
+
+  .input-pad {
+    //background-color: green;
+    grid-row-start: 4;
+    grid-column-start: 4;
+    input {
+      width: 93%;
+      height: 50px;
+      margin-top: 30px;
+      padding: 0 10px;
+      background-color: #E6E6E6;
+      font-family: 'Press Start 2P';
+      font-size: 20px;
+    }
+  }
+
+  .bottom-modes {
+    grid-row-start: 5;
+    grid-row-start: 5;
+    grid-column-start: 4;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 40% 20% 40%;
+  }
+
+  .black-button {
+    background-color: #404040;
+    border: #303030 5px solid;
+    color: gray;
+    cursor: pointer
+  }
+  .pokedex-mode {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .game-mode {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .level-button {
+    background-color: #1697F9;
+    border: #71CDF4 5px solid;
+    color: gray;
+    cursor: pointer;
+  }

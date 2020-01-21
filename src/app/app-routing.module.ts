@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ContactComponent } from './contact/contact.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { PhotoPokemonComponent } from './photo-pokemon/photo-pokemon.component';
 
 const routes: Routes = [
   {
@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'catalog',
     component: CatalogComponent
+  },
+  {
+    path: 'photo/:id',
+    component: PhotoPokemonComponent
   }
 ];
 
