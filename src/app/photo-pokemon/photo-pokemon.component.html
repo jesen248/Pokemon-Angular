@@ -4,7 +4,7 @@
     <div class="camera-display col-sm-6">
       <img src="{{img}}"/>
       <div id="actions">
-        <button class="a"><img src="./assets/images/pokeball.png" width="40px" height="45px" (click)="AddPokemonToTeam()"> </button>
+        <button class="a"><img src="./assets/images/pokeball.png" width="40px" height="45px" (click)="capturar()"> </button>
       </div>
     </div>
   </div>
@@ -12,7 +12,7 @@
   <div class="col-6">
     <div class="stats-display">
       <h1>Pokédex</h1>
-      <h2>{{ pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1) }}</h2>
+      <h2 *ngIf="pokemonName != undefined">{{ pokemonName.charAt(0).toUpperCase() + pokemonName.slice(0) }}</h2>
       <h2>Pokémon ID: #{{ id }}</h2>
       <br>
       <h3>Type</h3>

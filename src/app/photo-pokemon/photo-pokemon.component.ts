@@ -65,4 +65,17 @@ export class PhotoPokemonComponent implements OnInit {
     this.img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/" + this.id + ".png"
   }
 
+  capturar(){
+    var temp = Math.random();
+    console.log(temp);
+    if(temp < .6){
+      this.backImag();
+      window.alert('Asustaste al pokemon, te dio la espalda :)');
+    } else {
+      this.frontImg();
+      window.alert('El pokemon esta interesado en ser tuyo');
+    }
+
+  }
+
 }
